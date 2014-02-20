@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/liuwei/Documents/workspaces/Beem/src/com/beem/project/beem/service/aidl/IChat.aidl
+ * Original file: /Users/liuwei/Documents/workspaces/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IChat.aidl
  */
 package com.beem.project.beem.service.aidl;
 /**

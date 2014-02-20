@@ -30,6 +30,7 @@ public class LoadingPage extends Activity {
     	repeateAnimator1.setRepeatCount(ValueAnimator.INFINITE);
     	repeateAnimator1.setRepeatMode(ValueAnimator.REVERSE);
 
+//    	repeateAnimator1
 //    	ObjectAnimator repeateAnimator2 = ObjectAnimator.ofFloat(loadingLogo, "translationY",330.0f, 20.0f);
 //    	repeateAnimator2.setRepeatCount(ValueAnimator.INFINITE);
 //    	repeateAnimator2.setRepeatMode(ValueAnimator.REVERSE);

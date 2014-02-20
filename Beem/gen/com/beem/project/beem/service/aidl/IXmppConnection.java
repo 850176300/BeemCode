@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/liuwei/Documents/workspaces/Beem/src/com/beem/project/beem/service/aidl/IXmppConnection.aidl
+ * Original file: /Users/liuwei/Documents/workspaces/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IXmppConnection.aidl
  */
 package com.beem.project.beem.service.aidl;
 public interface IXmppConnection extends android.os.IInterface
