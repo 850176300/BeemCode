@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!-- 修改后的strings设置 -->
+<string name="login_progress">登陆中......</string>    
+    
+    
+    
+    
+    
 <!-- Generic terms -->
 <string name="app_name">Beem</string>
 <string name="OkButton">确定</string>
@@ -329,4 +336,11 @@ detail:\n%s</string>
 <string name="undefined_condition">未定义的情况</string>
 <string name="unexpected_condition">例外情况</string>
 <string name="request_timeout">请求超时</string>
+
+
+
+
+
+
+
 </resources>

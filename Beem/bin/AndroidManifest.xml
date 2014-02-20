@@ -73,6 +73,7 @@
 				<action android:name="com.beem.project.beem.BeemService"></action>
 			</intent-filter>
 		</service>
+		<activity android:name=".ui.LoginAccount" android:theme="@android:style/Theme.NoTitleBar"></activity>
 	</application>
 	
 </manifest>
