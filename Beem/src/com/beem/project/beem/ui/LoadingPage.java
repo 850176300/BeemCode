@@ -26,18 +26,18 @@ public class LoadingPage extends Activity {
 //    	loadingLogo.setAnimation(viewAnimation);
 //    	loadingLogo.animate().scaleX(1.2f);
     	AnimatorSet animatorSet = new AnimatorSet();
-    	ObjectAnimator repeateAnimator1 = ObjectAnimator.ofFloat(loadingLogo, "translationY",400.0f, 100.0f);
+    	ObjectAnimator repeateAnimator1 = ObjectAnimator.ofFloat(loadingLogo, "scaleX",0.8f, 1.0f);
     	repeateAnimator1.setRepeatCount(ValueAnimator.INFINITE);
     	repeateAnimator1.setRepeatMode(ValueAnimator.REVERSE);
 
 //    	repeateAnimator1
-//    	ObjectAnimator repeateAnimator2 = ObjectAnimator.ofFloat(loadingLogo, "translationY",330.0f, 20.0f);
-//    	repeateAnimator2.setRepeatCount(ValueAnimator.INFINITE);
-//    	repeateAnimator2.setRepeatMode(ValueAnimator.REVERSE);
+    	ObjectAnimator repeateAnimator2 = ObjectAnimator.ofFloat(loadingLogo, "scaleY", 0.8f, 1.0f);
+    	repeateAnimator2.setRepeatCount(ValueAnimator.INFINITE);
+    	repeateAnimator2.setRepeatMode(ValueAnimator.REVERSE);
     	
 //    	animatorSet.play(repeateAnimator1).before(repeateAnimator2);
 //    	animatorSet.playSequentially(repeateAnimator1);
-    	animatorSet.play(repeateAnimator1);//.with(repeateAnimator2);
+    	animatorSet.play(repeateAnimator1).with(repeateAnimator2);
     	animatorSet.setDuration(1000);
     	animatorSet.start();
     }
