@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/liuwei/Documents/workspaces/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IPrivacyListManager.aidl
+ * Original file: C:\\Users\\liuwei\\Documents\\GitHub\\BeemCode\\Beem\\src\\com\\beem\\project\\beem\\service\\aidl\\IPrivacyListManager.aidl
  */
 package com.beem.project.beem.service.aidl;
 public interface IPrivacyListManager extends android.os.IInterface

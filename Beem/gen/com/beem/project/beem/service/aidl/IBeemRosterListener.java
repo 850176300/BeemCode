@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/liuwei/Documents/workspaces/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IBeemRosterListener.aidl
+ * Original file: C:\\Users\\liuwei\\Documents\\GitHub\\BeemCode\\Beem\\src\\com\\beem\\project\\beem\\service\\aidl\\IBeemRosterListener.aidl
  */
 package com.beem.project.beem.service.aidl;
 public interface IBeemRosterListener extends android.os.IInterface

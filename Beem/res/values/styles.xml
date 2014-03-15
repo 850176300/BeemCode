@@ -14,7 +14,10 @@
 <!--		<item name="android:windowBackground">@drawable/background</item>-->		
 	</style>
 	
-
+    <style name="login_Btn_Font">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
 <!-- Old PC style -->
 
 	<style name="OldTheme">

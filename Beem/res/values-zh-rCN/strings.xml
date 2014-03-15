@@ -336,6 +336,7 @@ detail:\n%s</string>
 <string name="undefined_condition">未定义的情况</string>
 <string name="unexpected_condition">例外情况</string>
 <string name="request_timeout">请求超时</string>
+<string name="login">登录</string>
 
 
 
