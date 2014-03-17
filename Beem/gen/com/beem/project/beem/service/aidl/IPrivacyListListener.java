@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\liuwei\\Documents\\GitHub\\BeemCode\\Beem\\src\\com\\beem\\project\\beem\\service\\aidl\\IPrivacyListListener.aidl
+ * Original file: /Users/liuwei/Desktop/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IPrivacyListListener.aidl
  */
 package com.beem.project.beem.service.aidl;
 public interface IPrivacyListListener extends android.os.IInterface

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\liuwei\\Documents\\GitHub\\BeemCode\\Beem\\src\\com\\beem\\project\\beem\\service\\aidl\\IContact.aidl
+ * Original file: /Users/liuwei/Desktop/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IContact.aidl
  */
 package com.beem.project.beem.service.aidl;
 public interface IContact extends android.os.IInterface

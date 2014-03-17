@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\liuwei\\Documents\\GitHub\\BeemCode\\Beem\\src\\com\\beem\\project\\beem\\service\\aidl\\IBeemConnectionListener.aidl
+ * Original file: /Users/liuwei/Desktop/BeemCode/Beem/src/com/beem/project/beem/service/aidl/IBeemConnectionListener.aidl
  */
 package com.beem.project.beem.service.aidl;
 /**
