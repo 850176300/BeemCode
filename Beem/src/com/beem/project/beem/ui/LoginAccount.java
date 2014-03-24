@@ -32,22 +32,22 @@ public class LoginAccount extends Activity{
     	EmailAutoCompleteTextView emailAutoCompleteTextView = new EmailAutoCompleteTextView(this);
     	emailAutoCompleteTextView.setHint("账号");
     	emailAutoCompleteTextView.setClearButtonEnabled(true); // defaults to true
-    	emailAutoCompleteTextView.setClearButtonResId(R.drawable.close);
+    	emailAutoCompleteTextView.setClearButtonResId(R.drawable.clearable_button);
     	emailAutoCompleteTextView.setBackgroundColor(getResources().getColor(R.color.login_account));
     	emailAutoCompleteTextView.setHintTextColor(getResources().getColor(R.color.login_hint));
+    	emailAutoCompleteTextView.setDropDownBackgroundResource(R.drawable.login_panel_account);
         RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(     
                 LinearLayout.LayoutParams.FILL_PARENT,     
                 LinearLayout.LayoutParams.WRAP_CONTENT     
         );  
         p.height = 90;
-        p.leftMargin = 16;
-        p.rightMargin = 10;
     	emailAutoCompleteTextView.setLayoutParams(p);
     	emailAutoCompleteTextView.setId(R.id.layout_login_account);
     	emailAutoCompleteTextView.setSelectAllOnFocus(false);
     	loginGroup.addView(emailAutoCompleteTextView);
-    	emailAutoCompleteTextView.setDropDownHorizontalOffset(-16);
-    	emailAutoCompleteTextView.setDropDownVerticalOffset(0);
+//    	emailAutoCompleteTextView.setDropDownHorizontalOffset(-16);
+//    	emailAutoCompleteTextView.setDropDownVerticalOffset(0);
+    	emailAutoCompleteTextView.setDropDownHeight(105);
 
     	
     	
@@ -69,7 +69,7 @@ public class LoginAccount extends Activity{
         EmailAutoCompleteTextView pwdInput = new EmailAutoCompleteTextView(this);
         pwdInput.setHint("密码");
         pwdInput.setClearButtonEnabled(true);
-        pwdInput.setClearButtonResId(R.drawable.close);
+        pwdInput.setClearButtonResId(R.drawable.clearable_button);
         pwdInput.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         pwdInput.setAdapter(null);
         
@@ -78,8 +78,8 @@ public class LoginAccount extends Activity{
                 LinearLayout.LayoutParams.WRAP_CONTENT     
         );  
         pwdP.height = 90;
-        pwdP.leftMargin = 16;
-        pwdP.rightMargin = 10;
+//        pwdP.leftMargin = 16;
+//        pwdP.rightMargin = 10;
         pwdP.addRule(RelativeLayout.BELOW, R.id.layout_login_line);
         pwdInput.setLayoutParams(pwdP);
         pwdInput.setHintTextColor(getResources().getColor(R.color.login_hint));
