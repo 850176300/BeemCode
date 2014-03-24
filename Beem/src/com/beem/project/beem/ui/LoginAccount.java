@@ -2,15 +2,21 @@ package com.beem.project.beem.ui;
 
 
 import com.beem.project.beem.R;
+import com.greenhalolabs.emailautocompletetextview.*;
+//import com.greenhalolabs.emailautocompletetextview.EmailAutoCompleteTextView;
 
+import android.R.integer;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.DisplayMetrics;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.util.*;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -22,7 +28,69 @@ public class LoginAccount extends Activity{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.login_liuwei);
     	loginLayout = (RelativeLayout)this.findViewById(R.id.loginInputView);
-//    	loginLayout.animate().alpha(0);
+    	ViewGroup loginGroup = (ViewGroup)this.findViewById(R.id.input);
+    	EmailAutoCompleteTextView emailAutoCompleteTextView = new EmailAutoCompleteTextView(this);
+    	emailAutoCompleteTextView.setHint("账号");
+    	emailAutoCompleteTextView.setClearButtonEnabled(true); // defaults to true
+    	emailAutoCompleteTextView.setClearButtonResId(R.drawable.close);
+    	emailAutoCompleteTextView.setBackgroundColor(getResources().getColor(R.color.login_account));
+    	emailAutoCompleteTextView.setHintTextColor(getResources().getColor(R.color.login_hint));
+        RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(     
+                LinearLayout.LayoutParams.FILL_PARENT,     
+                LinearLayout.LayoutParams.WRAP_CONTENT     
+        );  
+        p.height = 90;
+        p.leftMargin = 16;
+        p.rightMargin = 10;
+    	emailAutoCompleteTextView.setLayoutParams(p);
+    	emailAutoCompleteTextView.setId(R.id.layout_login_account);
+    	emailAutoCompleteTextView.setSelectAllOnFocus(false);
+    	loginGroup.addView(emailAutoCompleteTextView);
+    	emailAutoCompleteTextView.setDropDownHorizontalOffset(-16);
+    	emailAutoCompleteTextView.setDropDownVerticalOffset(0);
+
+    	
+    	
+    	View line = new View(this);
+        RelativeLayout.LayoutParams linep = new RelativeLayout.LayoutParams(     
+                LinearLayout.LayoutParams.FILL_PARENT,     
+                LinearLayout.LayoutParams.WRAP_CONTENT     
+        );  
+        linep.height = 1;
+        linep.leftMargin = 1;
+        linep.rightMargin = 1;
+        linep.addRule(RelativeLayout.BELOW, R.id.layout_login_account);
+        line.setLayoutParams(linep);
+        line.setBackgroundColor(getResources().getColor(R.color.line_color));
+        loginGroup.addView(line);
+        line.setId(R.id.layout_login_line);
+        
+        
+        EmailAutoCompleteTextView pwdInput = new EmailAutoCompleteTextView(this);
+        pwdInput.setHint("密码");
+        pwdInput.setClearButtonEnabled(true);
+        pwdInput.setClearButtonResId(R.drawable.close);
+        pwdInput.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        pwdInput.setAdapter(null);
+        
+        RelativeLayout.LayoutParams pwdP = new RelativeLayout.LayoutParams(     
+                LinearLayout.LayoutParams.FILL_PARENT,     
+                LinearLayout.LayoutParams.WRAP_CONTENT     
+        );  
+        pwdP.height = 90;
+        pwdP.leftMargin = 16;
+        pwdP.rightMargin = 10;
+        pwdP.addRule(RelativeLayout.BELOW, R.id.layout_login_line);
+        pwdInput.setLayoutParams(pwdP);
+        pwdInput.setHintTextColor(getResources().getColor(R.color.login_hint));
+        pwdInput.setBackgroundColor(getResources().getColor(R.color.login_password));
+        pwdInput.setId(R.id.layout_login_password);
+        loginGroup.addView(pwdInput);
+        pwdInput.setSelectAllOnFocus(false);
+        
+        
+        
+        
     }
     
     @Override

@@ -8,4 +8,8 @@
 	<color name="deepblue">#293035</color>
 	<color name="transport">#00000000</color>
 	<color name="login_bg_color">#ffe6e6e6</color>
+	<color name="login_account">#00112233</color>
+	<color name="login_hint">#ff999999</color>
+	<color name="login_password">#00ffffff</color>
+	<color name="line_color">#ffcacdd1</color>
 </resources>
