@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/text_gray"
-    android:orientation="vertical" >
+    android:background="#c0000000"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Translucent" >
     
     
     

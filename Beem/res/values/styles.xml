@@ -46,11 +46,18 @@
     <item name="android:indeterminateDrawable">@drawable/qb_tenpay_progress</item>    <!-- 菊花图片 -->  
     <item name="android:indeterminateBehavior">repeat</item>  
     <item name="android:indeterminateDuration">3500</item>  
-    <item name="android:minWidth">48dip</item>  
-    <item name="android:maxWidth">48dip</item>  
-    <item name="android:minHeight">48dip</item>  
-    <item name="android:maxHeight">48dip</item>  
+    <item name="android:minWidth">20dip</item>  
+    <item name="android:maxWidth">20dip</item>  
+    <item name="android:minHeight">20dip</item>  
+    <item name="android:maxHeight">20dip</item>  
 </style>  
+
+<style name="AutoCompleteDropDown" parent="@android:style/Theme.Holo.Light">
+    <item name="android:dropDownListViewStyle">@style/AutoCompleteSelector</item>
+</style>
+<style name="AutoCompleteSelector" parent="@android:style/Widget.Holo.Light.ListView">
+    <item name="android:listSelector">#c0000000</item>
+</style>
 <!-- Other style -->
 
 </resources>

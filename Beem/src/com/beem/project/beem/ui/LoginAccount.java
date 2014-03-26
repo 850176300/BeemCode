@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.DisplayMetrics;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.util.*;
@@ -20,16 +21,18 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-public class LoginAccount extends Activity{
+public class LoginAccount extends Activity implements View.OnClickListener{
 	private RelativeLayout loginLayout;
+	private Button loginBtn;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.login_liuwei);
     	loginLayout = (RelativeLayout)this.findViewById(R.id.loginInputView);
+    	loginBtn = (Button)this.findViewById(R.id.login);
     	ViewGroup loginGroup = (ViewGroup)this.findViewById(R.id.input);
-    	EmailAutoCompleteTextView emailAutoCompleteTextView = new EmailAutoCompleteTextView(this);
+    	EmailAutoCompleteTextView emailAutoCompleteTextView = (EmailAutoCompleteTextView)this.getLayoutInflater().inflate(R.layout.dropdownemail_liuwei, null);
     	emailAutoCompleteTextView.setHint("账号");
     	emailAutoCompleteTextView.setClearButtonEnabled(true); // defaults to true
     	emailAutoCompleteTextView.setClearButtonResId(R.drawable.clearable_button);
@@ -48,6 +51,7 @@ public class LoginAccount extends Activity{
 //    	emailAutoCompleteTextView.setDropDownHorizontalOffset(-16);
 //    	emailAutoCompleteTextView.setDropDownVerticalOffset(0);
     	emailAutoCompleteTextView.setDropDownHeight(105);
+    	
 
     	
     	
@@ -113,5 +117,18 @@ public class LoginAccount extends Activity{
 //        int height = metric.heightPixels;   // 屏幕高度（像素）
 //        return new int[]{width, height};
 //    }
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.login:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
 	
 }

@@ -21,6 +21,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -44,6 +46,7 @@ public class LoadingPage extends Activity {
                    case LoadingPage.LOGINUSUAL:
                    {
                 	  animatorSet.cancel();
+                	  waitingsBar.clearAnimation();
 //                	  loadingLogo.animate().translationY(-100);
                 	  Intent intent = new Intent(LoadingPage.this, LoginAccount.class);
                 	  startActivityForResult(intent, 0);
@@ -87,6 +90,20 @@ public class LoadingPage extends Activity {
     	animatorSet.play(repeateAnimator1).with(repeateAnimator2);
     	animatorSet.setDuration(1000);
     	animatorSet.start();
+    	
+		  RotateAnimation rotation = new RotateAnimation(
+			      0f,
+			      360f,
+			      Animation.RELATIVE_TO_SELF,
+			      0.5f,
+			      Animation.RELATIVE_TO_SELF,
+			      0.5f);
+		  rotation.setDuration(1000);
+		  rotation.setInterpolator(new LinearInterpolator());
+		  rotation.setRepeatMode(Animation.RESTART);
+		  rotation.setRepeatCount(Animation.INFINITE);
+		  
+		  waitingsBar.startAnimation(rotation);
 
     }
     
