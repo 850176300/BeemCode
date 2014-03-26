@@ -56,6 +56,7 @@ containing a value of this type.
         public static final int login_hint=0x7f080009;
         public static final int login_password=0x7f08000a;
         public static final int red=0x7f080004;
+        public static final int text_gray=0x7f08000c;
         public static final int transport=0x7f080006;
         public static final int vert_manu=0x7f080001;
         public static final int white=0x7f080003;
@@ -121,21 +122,22 @@ containing a value of this type.
         public static final int logo=0x7f020039;
         public static final int logo_encryption=0x7f02003a;
         public static final int not_in_the_roster=0x7f02003b;
-        public static final int scrollbar_vertical_thumb=0x7f02003c;
-        public static final int scrollbar_vertical_track=0x7f02003d;
-        public static final int shape_border_green=0x7f02003e;
-        public static final int status_available=0x7f02003f;
-        public static final int status_away=0x7f020040;
-        public static final int status_blocked=0x7f020041;
-        public static final int status_dnd=0x7f020042;
-        public static final int status_error=0x7f020043;
-        public static final int status_icon=0x7f020044;
-        public static final int status_idle=0x7f020045;
-        public static final int status_invisible=0x7f020046;
-        public static final int status_new_message=0x7f020047;
-        public static final int status_offline=0x7f020048;
-        public static final int status_requested=0x7f020049;
-        public static final int status_typing=0x7f02004a;
+        public static final int qb_tenpay_progress=0x7f02003c;
+        public static final int scrollbar_vertical_thumb=0x7f02003d;
+        public static final int scrollbar_vertical_track=0x7f02003e;
+        public static final int shape_border_green=0x7f02003f;
+        public static final int status_available=0x7f020040;
+        public static final int status_away=0x7f020041;
+        public static final int status_blocked=0x7f020042;
+        public static final int status_dnd=0x7f020043;
+        public static final int status_error=0x7f020044;
+        public static final int status_icon=0x7f020045;
+        public static final int status_idle=0x7f020046;
+        public static final int status_invisible=0x7f020047;
+        public static final int status_new_message=0x7f020048;
+        public static final int status_offline=0x7f020049;
+        public static final int status_requested=0x7f02004a;
+        public static final int status_typing=0x7f02004b;
     }
     public static final class id {
         public static final int CDAliasDialogLabel=0x7f09001d;
@@ -259,12 +261,13 @@ containing a value of this type.
         public static final int login=0x7f03000c;
         public static final int login_anim=0x7f03000d;
         public static final int login_liuwei=0x7f03000e;
-        public static final int privacy_list=0x7f03000f;
-        public static final int privacy_list_create_dialog=0x7f030010;
-        public static final int simple_combobox_item=0x7f030011;
-        public static final int subscription=0x7f030012;
-        public static final int wizard_account_configure=0x7f030013;
-        public static final int wizard_account_main_fragment=0x7f030014;
+        public static final int login_title_liuwei=0x7f03000f;
+        public static final int privacy_list=0x7f030010;
+        public static final int privacy_list_create_dialog=0x7f030011;
+        public static final int simple_combobox_item=0x7f030012;
+        public static final int subscription=0x7f030013;
+        public static final int wizard_account_configure=0x7f030014;
+        public static final int wizard_account_main_fragment=0x7f030015;
     }
     public static final class menu {
         public static final int chat=0x7f0b0000;
@@ -924,12 +927,13 @@ containing a value of this type.
         public static final int userinfo_yes=0x7f0600af;
     }
     public static final class style {
-        public static final int AppTheme=0x7f0a0008;
+        public static final int AppTheme=0x7f0a0009;
         public static final int CheckBoxLabel=0x7f0a0001;
         /**  progressBar style 
          */
         public static final int CustomProgressStyle=0x7f0a0007;
         public static final int Label=0x7f0a0000;
+        public static final int MyProgressStyle=0x7f0a0008;
         /**  Old PC style 
          */
         public static final int OldTheme=0x7f0a0004;

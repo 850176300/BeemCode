@@ -40,6 +40,17 @@
     <item name="android:minHeight">15dip</item>
     <item name="android:maxHeight">15dip</item>
 </style>	
+
+<style name="MyProgressStyle" parent="@android:style/Widget.ProgressBar">  
+    <item name="android:indeterminateOnly">true</item>  
+    <item name="android:indeterminateDrawable">@drawable/qb_tenpay_progress</item>    <!-- 菊花图片 -->  
+    <item name="android:indeterminateBehavior">repeat</item>  
+    <item name="android:indeterminateDuration">3500</item>  
+    <item name="android:minWidth">48dip</item>  
+    <item name="android:maxWidth">48dip</item>  
+    <item name="android:minHeight">48dip</item>  
+    <item name="android:maxHeight">48dip</item>  
+</style>  
 <!-- Other style -->
 
 </resources>

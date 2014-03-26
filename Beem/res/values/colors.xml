@@ -12,4 +12,5 @@
 	<color name="login_hint">#ff999999</color>
 	<color name="login_password">#00ffffff</color>
 	<color name="line_color">#ffcacdd1</color>
+	<color name="text_gray">#ff777777</color>
 </resources>
